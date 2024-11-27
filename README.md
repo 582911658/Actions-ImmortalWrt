@@ -1,4 +1,4 @@
-# ImmortalWrt 自动编译
+# leanwrt 自动编译
 
 ## 使用步骤
 
