@@ -30,7 +30,7 @@ on:
 jobs:
   build:
     if: ${{inputs.ssh == false}}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: 🚀 编译 (Build)
     steps:
       - name: 下载编译所需的依赖 (Install the software packages required for compilation)
@@ -91,7 +91,7 @@ jobs:
   build-ssh:
     if: ${{inputs.ssh == true}}
     name: 🚀 编译 (Build) - SSH
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: 下载编译所需的依赖 (Install the software packages required for compilation)
         run: |
